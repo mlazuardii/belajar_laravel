@@ -7,6 +7,14 @@
  
 	<h1>Tutorial Laravel</h1>
 	<a href="https://www.malasngoding.com/category/laravel">www.malasngoding.com</a>
+	<br>
+	<p> Nama : {{$nama}} </p>
+	<p> Pelajaran :</p>
+	<ul>
+	@foreach($pelajaran as $p)
+	<li>{{$p}}</li>
+	@endforeach
+	</ul>
  
 </body>
 </html>

@@ -29,3 +29,22 @@ Route::get('/pegawai/{nama}', 'PegawaiController@index');
 
 Route::get('/formulir', 'PegawaiController@formulir');
 Route::post('/formulir/proses', 'PegawaiController@proses');
+
+//Pelajaran Ke-8
+Route::get('blog', 'BlogController@home');
+Route::get('blog/tentang', 'BlogController@tentang');
+Route::get('blog/kontak', 'BlogController@kontak');
+
+//Pelajaran ke-9
+Route::get('pegawaicrud','PegawaiCrudController@index');
+
+//Pelajaran ke-10
+Route::get('pegawaicrud/tambah','PegawaiCrudController@tambah');
+Route::post('pegawaicrud/store','PegawaiCrudController@store');
+
+//pelajaran ke-11
+Route::get('/pegawaicrud/edit/{id}','PegawaiCrudController@edit');
+Route::post('/pegawaicrud/update','PegawaiCrudController@update');
+
+//pelajaran ke-12
+Route::get('/pegawaicrud/hapus/{id}','PegawaiCrudController@hapus');
