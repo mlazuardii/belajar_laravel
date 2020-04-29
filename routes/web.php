@@ -48,3 +48,11 @@ Route::post('/pegawaicrud/update','PegawaiCrudController@update');
 
 //pelajaran ke-12
 Route::get('/pegawaicrud/hapus/{id}','PegawaiCrudController@hapus');
+
+//pelajaran ke-16
+Route::get('pegawaicrud/cari','PegawaiCrudController@cari');
+
+//pelajaran ke-18
+Route::get('/input', 'MalasngodingController@input');
+
+Route::post('/proses', 'MalasngodingController@proses');
