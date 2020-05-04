@@ -56,3 +56,14 @@ Route::get('pegawaicrud/cari','PegawaiCrudController@cari');
 Route::get('/input', 'MalasngodingController@input');
 
 Route::post('/proses', 'MalasngodingController@proses');
+
+//pelajaran ke-20 
+Route::get('/murid', 'MuridController@index');
+
+//pelajaran ke-21 
+Route::get('/staf', 'StafController@index');
+Route::get('/staf/tambah', 'StafController@tambah');
+Route::post('/staf/store', 'StafController@store');
+Route::get('/staf/edit/{id}', 'StafController@edit');
+Route::put('/staf/update/{id}', 'StafController@update');
+Route::get('/staf/hapus/{id}', 'StafController@delete');
