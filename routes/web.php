@@ -67,3 +67,24 @@ Route::post('/staf/store', 'StafController@store');
 Route::get('/staf/edit/{id}', 'StafController@edit');
 Route::put('/staf/update/{id}', 'StafController@update');
 Route::get('/staf/hapus/{id}', 'StafController@delete');
+
+//pelajaran ke-22 
+Route::get('/staf/trash', 'StafController@trash');
+Route::get('/staf/kembalikan/{id}', 'StafController@kembalikan');
+Route::get('/staf/kembalikan_semua', 'StafController@kembalikan_semua');
+Route::get('/staf/hapus_permanen/{id}', 'StafController@hapus_permanen');
+Route::get('/staf/hapus_permanen_semua', 'StafController@hapus_permanen_semua');
+
+//pelajaran ke-23 
+Route::get('/pengguna', 'PenggunaController@index');
+
+//pelajaran ke-24 
+Route::get('/article', 'WebController@index');
+
+//plajaran ke-25 
+Route::get('/anggota', 'DikiController@index');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
