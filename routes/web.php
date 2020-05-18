@@ -88,3 +88,9 @@ Route::get('/anggota', 'DikiController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//pelajaran ke-28  
+Route::get('/rahasia', 'RahasiaController@enkripsi');
+Route::get('/data/', 'RahasiaController@data');
+Route::get('/data/{data_rahasia}', 'RahasiaController@data_proses');
+Route::get('/rahasia2', 'RahasiaController@hash');
