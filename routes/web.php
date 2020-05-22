@@ -94,3 +94,19 @@ Route::get('/rahasia', 'RahasiaController@enkripsi');
 Route::get('/data/', 'RahasiaController@data');
 Route::get('/data/{data_rahasia}', 'RahasiaController@data_proses');
 Route::get('/rahasia2', 'RahasiaController@hash');
+
+//pelajaran ke-30
+Route::get('/upload', 'UploadController@upload');
+Route::post('/upload/proses', 'UploadController@proses_upload');
+Route::get('/upload/hapus/{id}', 'UploadController@hapus');
+
+//pelajaran ke-31 
+Route::get('/sesi/buat','SesiController@buat');
+Route::get('/sesi/tampil','SesiController@tampil');
+Route::get('/sesi/hapus','SesiController@hapus');
+
+//pelajaran ke-33 
+Route::get('pesan','NotifController@index');
+Route::get('pesan/sukses','NotifController@sukses');
+Route::get('pesan/gagal','NotifController@gagal');
+
